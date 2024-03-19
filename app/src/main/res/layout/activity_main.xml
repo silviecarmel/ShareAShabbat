@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF5FF"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/AddGuestButton"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:adjustViewBounds="false"
+        android:background="#13455B"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/addguest"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <ImageButton
+        android:id="@+id/NearestBeitKnesset"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#13455B"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/torah"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <ImageButton
+        android:id="@+id/Delivery"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#13455B"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/truck"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <ImageButton
+        android:id="@+id/Host"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="#13455B"
+        android:tint="#FFFFFF"
+        app:srcCompat="@drawable/bed"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="224dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="413dp"
+        android:layout_height="90dp"
+        android:background="#D9D9D9"
+        app:itemBackground="#D9D9D9"
+        app:itemIconTint="#D9D9D9"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="642dp" >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/homebutton" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
