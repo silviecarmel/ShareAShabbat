@@ -33,7 +33,6 @@
         android:layout_marginEnd="71dp"
         android:background="@color/colorSecondary"
         android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/Delivery"
         app:layout_constraintTop_toBottomOf="@+id/Host"
@@ -45,10 +44,8 @@
         android:layout_height="125dp"
         android:layout_marginStart="64dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="150dp"
         android:background="@color/colorSecondary"
         android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toStartOf="@+id/NearestBeitKnesset"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AddGuestButton"
@@ -68,17 +65,6 @@
         app:layout_constraintStart_toEndOf="@+id/AddGuestButton"
         app:layout_constraintTop_toBottomOf="@+id/searchView"
         app:srcCompat="@drawable/bed" />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="413dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="153dp"
-        android:background="@color/colorPrimaryVariant"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/NearestBeitKnesset" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -156,5 +142,56 @@
         android:textStyle="bold"
         tools:layout_editor_absoluteX="77dp"
         tools:layout_editor_absoluteY="396dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="409dp"
+        android:layout_height="81dp"
+        android:background="@color/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimaryVariant"
+            android:clickable="true"
+            android:src="@drawable/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/preferences" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorSecondary"
+            android:clickable="true"
+            android:src="@drawable/preferences"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/profile"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/homebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorPrimaryVariant"
+            android:clickable="true"
+            android:src="@drawable/homebutton"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/preferences"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
