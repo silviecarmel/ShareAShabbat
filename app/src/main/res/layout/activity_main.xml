@@ -4,65 +4,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DFF5FF"
+    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
+
 
     <ImageButton
         android:id="@+id/AddGuestButton"
         android:layout_width="125dp"
         android:layout_height="125dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="27dp"
         android:adjustViewBounds="false"
-        android:background="#13455B"
-        android:tint="#FFFFFF"
-        app:srcCompat="@drawable/addguest"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="224dp" />
+        android:background="@color/colorSecondary"
+        android:contentDescription="Add A Guest"
+        android:tint="@color/colorOnSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/Delivery"
+        app:layout_constraintEnd_toStartOf="@+id/Host"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/addguest" />
 
     <ImageButton
         android:id="@+id/NearestBeitKnesset"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:background="#13455B"
-        android:tint="#FFFFFF"
-        app:srcCompat="@drawable/torah"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:layout_marginEnd="71dp"
+        android:background="@color/colorSecondary"
+        android:tint="@color/colorOnSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Delivery"
+        app:layout_constraintTop_toBottomOf="@+id/Host"
+        app:srcCompat="@drawable/torah" />
 
     <ImageButton
         android:id="@+id/Delivery"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:background="#13455B"
-        android:tint="#FFFFFF"
-        app:srcCompat="@drawable/truck"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="150dp"
+        android:background="@color/colorSecondary"
+        android:tint="@color/colorOnSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toStartOf="@+id/NearestBeitKnesset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddGuestButton"
+        app:srcCompat="@drawable/truck" />
 
     <ImageButton
         android:id="@+id/Host"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:background="#13455B"
-        android:tint="#FFFFFF"
-        app:srcCompat="@drawable/bed"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="224dp" />
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/colorSecondary"
+        android:tint="@color/colorOnSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/NearestBeitKnesset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/AddGuestButton"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/bed" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="413dp"
-        android:layout_height="90dp"
-        android:background="#D9D9D9"
-        app:itemBackground="#D9D9D9"
-        app:itemIconTint="#D9D9D9"
-        tools:layout_editor_absoluteX="-3dp"
-        tools:layout_editor_absoluteY="642dp" >
+        android:layout_height="77dp"
+        android:layout_marginTop="153dp"
+        android:background="@color/colorPrimaryVariant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NearestBeitKnesset" />
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:clickable="true"
-            app:srcCompat="@drawable/homebutton" />
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorOnSecondary"
+        app:layout_constraintBottom_toTopOf="@+id/AddGuestButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/AddAGuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add A Guest"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:background="@color/colorSecondary"
+        android:drawableBottom="@drawable/addguest"
+        android:drawablePadding="0dp"
+        android:drawableTint="@color/colorOnSecondary"
+        android:text="Add A Guest"
+        android:textColor="@color/colorOnSecondary"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="529dp" />
+
+    <TextView
+        android:id="@+id/BeHosted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="440dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="670dp"
+        android:text="Be Hosted"
+        android:textColor="@color/colorOnPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/NearestBeitKnesset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Host" />
+
+    <TextView
+        android:id="@+id/NearestBK"
+        android:layout_width="121dp"
+        android:layout_height="49dp"
+        android:text="Nearest Beit Knesset"
+        android:textAlignment="center"
+        android:textColor="@color/colorOnPrimary"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="215dp"
+        tools:layout_editor_absoluteY="396dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Your Meal"
+        android:textColor="@color/colorOnPrimary"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="396dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
