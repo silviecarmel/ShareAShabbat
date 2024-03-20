@@ -9,153 +9,29 @@
     tools:context=".MainActivity">
 
 
-    <ImageButton
-        android:id="@+id/AddGuestButton"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="241dp"
-        android:layout_marginBottom="358dp"
-        android:adjustViewBounds="false"
-        android:background="@color/colorSecondary"
-        android:contentDescription="Add A Guest"
-        android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/addguest" />
 
-    <ImageButton
-        android:id="@+id/NearestBeitKnesset"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="426dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="180dp"
-        android:background="@color/colorSecondary"
-        android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/torah" />
 
-    <TextView
-        android:id="@+id/NearestBK"
-        android:layout_width="121dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="242dp"
-        android:layout_marginTop="440dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="242dp"
-        android:text="Nearest Beit Knesset"
-        android:textAlignment="center"
-        android:textColor="@color/colorOnPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/Delivery"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="425dp"
-        android:layout_marginEnd="241dp"
-        android:layout_marginBottom="181dp"
-        android:background="@color/colorSecondary"
-        android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/truck" />
-
-    <ImageButton
-        android:id="@+id/Host"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="358dp"
-        android:background="@color/colorSecondary"
-        android:tint="@color/colorOnSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/AddGuestButton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bed" />
-
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="320dp"
+        android:layout_width="370dp"
         android:layout_height="47dp"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="46dp"
         android:layout_marginBottom="503dp"
         android:background="@color/colorOnSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/AddAGuest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="268dp"
-        android:layout_marginBottom="445dp"
-        android:text="Add A Guest"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:queryHint="How can we enhance your Shabbat?"
+        app:iconifiedByDefault="false"/>
 
-    <TextView
-        android:id="@+id/BeHosted"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="267dp"
-        android:layout_marginTop="268dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="444dp"
-        android:text="Be Hosted"
-        android:textColor="@color/colorOnPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="54dp"
-        android:layout_marginTop="453dp"
-        android:layout_marginEnd="253dp"
-        android:layout_marginBottom="259dp"
-        android:text="Order Your Meal"
-        android:textColor="@color/colorOnPrimary"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -165,8 +41,10 @@
         android:background="@color/colorPrimaryVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/profile"
@@ -176,15 +54,16 @@
             android:layout_marginTop="17dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="8dp"
-            android:background="@color/colorPrimaryVariant"
-            android:clickable="true"
-            android:outlineSpotShadowColor="@color/colorSecondary"
             android:src="@drawable/profile"
+            app:backgroundTint="@color/colorSecondary"
+            app:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/preferences"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#62a1bc"
+            app:tint="@color/colorOnSecondary" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/preferences"
@@ -193,30 +72,226 @@
             android:layout_marginStart="123dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="125dp"
-            android:background="@color/colorSecondary"
+            android:backgroundTint="@color/colorSecondary"
             android:clickable="true"
             android:src="@drawable/preferences"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="#62a1bc"
+            app:tint="@color/colorOnSecondary" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/homebutton"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="303dp"
-            android:background="@color/colorPrimaryVariant"
+            android:backgroundTint="@color/colorSecondary"
             android:clickable="true"
-            android:foregroundTint="@color/colorOnPrimary"
-            android:outlineAmbientShadowColor="@color/colorSecondary"
             android:src="@drawable/homebutton"
-            android:tint="@color/colorSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="@color/colorSecondary" />
+            app:rippleColor="#62a1bc"
+            app:tint="@color/colorOnSecondary" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewGUEST"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="259dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_counterInParent="true"
+            android:padding="10dip"
+            android:text="Add A Guest"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Add A Guest">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="35dip"
+            app:srcCompat="@drawable/addguest"
+            app:tint="@color/colorOnSecondary">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHOST"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="259dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="35dip"
+            app:srcCompat="@drawable/bed"
+            app:tint="@color/colorOnSecondary">
+
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_counterInParent="true"
+            android:padding="10dip"
+            android:text="Be Hosted"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="180dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dip"
+            app:srcCompat="@drawable/torah"
+            app:tint="@color/colorOnSecondary">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_counterInParent="true"
+            android:padding="10dip"
+            android:text="Nearest Beit Knesset"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="426dp"
+        android:layout_marginEnd="241dp"
+        android:layout_marginBottom="180dp"
+        app:cardBackgroundColor="@color/colorSecondary"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/truck"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dip"
+            app:srcCompat="@drawable/truck"
+            app:tint="@color/colorOnSecondary">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_counterInParent="true"
+            android:padding="10dip"
+            android:text="Order Your Meal"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="0dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
