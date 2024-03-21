@@ -55,7 +55,7 @@
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="8dp"
             android:src="@drawable/profile"
-            app:backgroundTint="@color/colorSecondary"
+            app:backgroundTint="@color/colorPrimaryVariant"
             app:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -63,7 +63,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="#62a1bc"
-            app:tint="@color/colorOnSecondary" />
+            app:tint="#62a1bc" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/preferences"
@@ -72,30 +72,30 @@
             android:layout_marginStart="123dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="125dp"
-            android:backgroundTint="@color/colorSecondary"
+            android:backgroundTint="@color/colorPrimaryVariant"
             android:clickable="true"
             android:src="@drawable/preferences"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="#62a1bc"
-            app:tint="@color/colorOnSecondary" />
+            app:tint="#62a1bc" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/homebutton"
             android:layout_width="174dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
+            android:layout_marginStart="45dp"
             android:layout_marginTop="17dp"
             android:layout_marginEnd="303dp"
-            android:backgroundTint="@color/colorSecondary"
+            android:backgroundTint="@color/material_dynamic_neutral60"
             android:clickable="true"
-            android:src="@drawable/homebutton"
+            android:src="@drawable/baseline_home"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="#62a1bc"
-            app:tint="@color/colorOnSecondary" />
+            app:tint="@color/colorSecondary" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -224,23 +224,24 @@
 
         </ImageView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_counterInParent="true"
-            android:padding="10dip"
-            android:text="Nearest Beit Knesset"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold">
-        </TextView>
-    <RelativeLayout
+        <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="0dp"/>
+        tools:layout_editor_absoluteY="0dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_counterInParent="true"
+                android:padding="10dip"
+                android:text="Nearest Shul"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
 
@@ -274,7 +275,7 @@
             android:layout_height="wrap_content"
             android:layout_counterInParent="true"
             android:padding="10dip"
-            android:text="Order Your Meal"
+            android:text="Order Meal"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
