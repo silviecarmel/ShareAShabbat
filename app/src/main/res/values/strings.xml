@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="home_button_navigation_bar">Navigate home</string>
+    <string name="profile_button_description">Open profile</string>
+    <string name="order_meal">Order Meal</string>
+    <string name="preferences_description">Open profile</string>
+
 </resources>
