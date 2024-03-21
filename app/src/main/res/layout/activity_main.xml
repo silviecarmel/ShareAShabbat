@@ -134,7 +134,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="35dip"
-            app:srcCompat="@drawable/AddGuest"
+            app:srcCompat="@drawable/addguest"
             app:tint="@color/colorOnSecondary">
 
         </ImageView>
@@ -145,6 +145,8 @@
             android:layout_height="match_parent"
             tools:layout_editor_absoluteX="54dp"
             tools:layout_editor_absoluteY="0dp" />
+
+
 
     </androidx.cardview.widget.CardView>
 
