@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--suppress ALL -->
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -10,92 +9,62 @@
     tools:context=".MainActivity">
 
 
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
-        android:layout_width="370dp"
-        android:layout_height="47dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="46dp"
-        android:layout_marginBottom="503dp"
         android:background="@color/colorOnSecondary"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="How can we enhance your Shabbat?"
-        app:iconifiedByDefault="false"/>
-
+        app:queryHint="How can we enhance your Shabbat?" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
-        android:layout_width="409dp"
+        android:layout_width="0dp"
         android:layout_height="81dp"
-        android:layout_marginTop="650dp"
         android:background="@color/colorPrimaryVariant"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/profile"
+            android:id="@+id/floatingActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="255dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="8dp"
-            android:src="@drawable/profile"
-            app:backgroundTint="@color/colorPrimaryVariant"
-            app:clickable="true"
+            android:layout_marginStart="100dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
+            app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/preferences" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/preferences"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#62a1bc"
-            app:tint="#62a1bc"
-            android:contentDescription="@string/profile_button_description"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/preferences"
-            android:layout_width="208dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="123dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="125dp"
-            android:backgroundTint="@color/colorPrimaryVariant"
-            android:clickable="true"
-            android:src="@drawable/preferences"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#62a1bc"
-            app:tint="#62a1bc"
-            android:contentDescription="@string/preferences_button_description"/>
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/HomeButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="45dp"
-            android:layout_marginTop="17dp"
-            android:layout_marginEnd="303dp"
-            android:backgroundTint="@color/material_dynamic_neutral60"
-            android:clickable="true"
-            android:src="@drawable/baseline_home"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:rippleColor="#62a1bc"
-            app:tint="@color/colorSecondary"
-            android:contentDescription="@string/home_button_navigation_bar"/>
-
+            app:srcCompat="@drawable/profile" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
@@ -116,40 +85,46 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <TextView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_counterInParent="true"
-            android:padding="10dip"
-            android:text="Add A Guest"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            tools:text="Add A Guest">
+            android:layout_height="match_parent">
 
-        </TextView>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/addguest"
+                app:tint="@color/colorOnSecondary">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="35dip"
-            app:srcCompat="@drawable/addguest"
-            app:tint="@color/colorOnSecondary">
+            </ImageView>
 
-        </ImageView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_counterInParent="true"
+                android:padding="10dip"
+                android:text="Add A Guest"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Add A Guest">
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="0dp" />
-
+            </TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
-
 
 
     <androidx.cardview.widget.CardView
@@ -177,6 +152,7 @@
             app:tint="@color/colorOnSecondary">
 
         </ImageView>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -191,12 +167,12 @@
         </TextView>
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="0dp"/>
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="0dp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -226,11 +202,11 @@
         </ImageView>
 
         <RelativeLayout
-        android:id="@+id/relativeLayout2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="0dp">
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="0dp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -268,8 +244,7 @@
             android:layout_height="match_parent"
             android:padding="40dip"
             app:srcCompat="@drawable/truck"
-            app:tint="@color/colorOnSecondary">
-        </ImageView>
+            app:tint="@color/colorOnSecondary"></ImageView>
 
         <TextView
             android:layout_width="match_parent"
@@ -280,13 +255,13 @@
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:textStyle="bold">
-        </TextView>
-    <RelativeLayout
-        android:id="@+id/relativeLayout3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="0dp"/>
+            android:textStyle="bold"></TextView>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="0dp" />
     </androidx.cardview.widget.CardView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
