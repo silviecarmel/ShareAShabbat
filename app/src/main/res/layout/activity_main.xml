@@ -14,11 +14,11 @@
         android:id="@+id/searchView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
-        android:layout_marginEnd="46dp"
+        android:layout_marginEnd="40dp"
         android:background="@color/colorOnSecondary"
-        android:textAlignment="center"
+        app:hideNavigationIcon="false"
         app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewGUEST"
+        android:id="@+id/cardViewHost"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="90dp"
@@ -45,7 +45,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayoutGuest"
+            android:id="@+id/constraintLayoutHost"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
@@ -74,7 +74,7 @@
                 android:padding="10dp"
                 android:text="Host"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +123,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/bed"
-                app:tint="@color/colorOnSecondary">
+                app:tint="@color/white">
 
             </ImageView>
 
@@ -135,7 +135,7 @@
                 android:padding="10dip"
                 android:text="Be Hosted"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -248,7 +248,7 @@
                 android:padding="10dip"
                 android:text="Order a Meal"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
