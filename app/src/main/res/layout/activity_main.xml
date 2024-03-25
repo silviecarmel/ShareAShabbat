@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayoutSearch"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
@@ -17,6 +18,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginEnd="46dp"
         android:background="@color/colorOnSecondary"
+        android:textAlignment="center"
         app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,10 +45,12 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutGuest"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/hostImage"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="40dp"
@@ -58,24 +62,24 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/addguest"
-                app:tint="@color/colorOnSecondary">
+                app:tint="@color/white">
 
             </ImageView>
 
             <TextView
+                android:id="@+id/hostText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_counterInParent="true"
-                android:padding="10dip"
-                android:text="Add A Guest"
+                android:padding="10dp"
+                android:text="Host"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:text="Add A Guest">
+                app:layout_constraintTop_toTopOf="parent">
 
             </TextView>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -85,7 +89,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewHOST"
+        android:id="@+id/cardViewHosted"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="220dp"
@@ -102,10 +106,12 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutHosted"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
+                android:id="@+id/hostedImage"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="40dp"
@@ -122,6 +128,7 @@
             </ImageView>
 
             <TextView
+                android:id="@+id/hostedText"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_counterInParent="true"
@@ -143,6 +150,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/constraintLayoutNearestshul"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="220dp"
@@ -159,42 +167,45 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutNearestshul"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/nearestshulImage"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
                 android:scaleType="fitCenter"
+                android:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/torah" />
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
+                android:id="@+id/nearestshulText"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_counterInParent="true"
                 android:padding="10dp"
                 android:text="Nearest Shul"
                 android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></TextView>
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/CardViewOrder"
         android:layout_width="125dp"
         android:layout_height="125dp"
         android:layout_marginStart="40dp"
@@ -210,31 +221,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/truck"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:padding="40dip"
-            app:srcCompat="@drawable/truck"
-            app:tint="@color/colorOnSecondary"></ImageView>
+            android:layout_height="match_parent">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_counterInParent="true"
-            android:padding="10dip"
-            android:text="@string/order_meal"
-            android:textAlignment="center"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold"></TextView>
+            <ImageView
+                android:id="@+id/orderimage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:padding="40dip"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/truck"
+                app:tint="@color/colorOnSecondary"></ImageView>
 
-        <RelativeLayout
-            android:id="@+id/relativeLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="54dp"
-            tools:layout_editor_absoluteY="0dp" />
+            <TextView
+                android:id="@+id/orderText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_counterInParent="true"
+                android:padding="10dip"
+                android:text="Order a Meal"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -247,33 +268,36 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
+            android:id="@+id/homebutton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:clickable="true"
+            app:backgroundTint="@color/colorSecondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/baseline_home" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton2"
+            android:id="@+id/preferencesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            app:backgroundTint="@color/colorPrimaryVariant"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton3"
-            app:layout_constraintStart_toEndOf="@+id/floatingActionButton"
+            app:layout_constraintEnd_toStartOf="@+id/profileButton"
+            app:layout_constraintStart_toEndOf="@+id/homebutton"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/preferences" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton3"
+            android:id="@+id/profileButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="100dp"
             android:clickable="true"
+            app:backgroundTint="@color/colorPrimaryVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
