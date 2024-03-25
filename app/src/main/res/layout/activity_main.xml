@@ -62,7 +62,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/addguest"
-                app:tint="@color/white">
+                android:tint="@color/white">
 
             </ImageView>
 
@@ -122,7 +122,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/bed"
-                app:tint="@color/white">
+                android:tint="@color/white">
 
             </ImageView>
 
@@ -236,7 +236,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/truck"
-                app:tint="@color/colorOnSecondary"></ImageView>
+                android:tint="@color/colorOnSecondary"></ImageView>
 
             <TextView
                 android:id="@+id/orderText"
@@ -284,12 +284,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
+            android:tint="@color/colorSecondary"
             app:backgroundTint="@color/colorPrimaryVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/profileButton"
             app:layout_constraintStart_toEndOf="@+id/homebutton"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/preferences" />
+            app:srcCompat="@drawable/preferences"
+            app:tint="@color/colorSecondary"
+            />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/profileButton"
@@ -301,6 +304,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/profile" />
+            app:srcCompat="@drawable/profile"
+            app:tint="@color/colorSecondary"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
