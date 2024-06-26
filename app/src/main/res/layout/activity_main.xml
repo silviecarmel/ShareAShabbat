@@ -23,238 +23,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:queryHint="How can we enhance your Shabbat?"
+        app:queryHint="Enter name"
         app:queryTextSize="9sp" />
 
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewHost"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="286dp"
-        android:layout_marginBottom="259dp"
-        app:cardBackgroundColor="@color/colorSecondary"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_guest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayoutHost"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/hostImage"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/addguest"
-                android:tint="@color/white">
-
-            </ImageView>
-
-            <TextView
-                android:id="@+id/hostText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_counterInParent="true"
-                android:padding="10dp"
-                android:text="Host"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            </TextView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewHosted"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="259dp"
-        app:cardBackgroundColor="@color/colorSecondary"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayoutHosted"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/hostedImage"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/bed"
-                android:tint="@color/white">
-
-            </ImageView>
-
-            <TextView
-                android:id="@+id/hostedText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_counterInParent="true"
-                android:padding="10dip"
-                android:text="Be Hosted"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-            </TextView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/constraintLayoutNearestshul"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="426dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="180dp"
-        app:cardBackgroundColor="@color/colorSecondary"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayoutNearestshul"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/nearestshulImage"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitCenter"
-                android:tint="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/torah" />
-
-            <TextView
-                android:id="@+id/nearestshulText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_counterInParent="true"
-                android:padding="10dp"
-                android:text="Nearest Shul"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/CardViewOrder"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="426dp"
-        android:layout_marginEnd="241dp"
-        android:layout_marginBottom="180dp"
-        app:cardBackgroundColor="@color/colorSecondary"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/orderimage"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginBottom="20dp"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/truck"
-                android:tint="@color/colorOnSecondary"></ImageView>
-
-            <TextView
-                android:id="@+id/orderText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_counterInParent="true"
-                android:padding="10dip"
-                android:text="Order a Meal"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"></TextView>
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -271,27 +51,26 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:clickable="true"
-            android:tint="@color/colorOnSecondary"
-            app:backgroundTint="@color/colorSecondary"
+            android:tint="@color/colorSecondary"
+            app:backgroundTint="@color/colorPrimaryVariant"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/homebutton"
-            app:tint="@color/colorOnSecondary"/>
+            app:tint="@color/colorSecondary"/>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/preferencesButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:tint="@color/colorSecondary"
-            app:backgroundTint="@color/colorPrimaryVariant"
+            app:backgroundTint="@color/colorSecondary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/profileButton"
             app:layout_constraintStart_toEndOf="@+id/homebutton"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/preferences"
-            app:tint="@color/colorSecondary"
+            app:tint="@color/colorOnPrimary"
             />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="photo1">photo1</drawable>
+    <drawable name="photo2">photo2</drawable>
+    <drawable name="photo3">photo3</drawable>
+    <drawable name="photo4">photo4</drawable>
+    <drawable name="photo5">photo5</drawable>
+</resources>
