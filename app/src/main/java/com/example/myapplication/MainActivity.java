@@ -5,9 +5,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView rv = findViewById(R.id.rv_guest);
+        RecyclerView rv = findViewById(R.id.rvGuest);
         rv.setHasFixedSize(false);
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this,1);
