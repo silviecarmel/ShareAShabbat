@@ -6,11 +6,11 @@ public class Guest {
     public int Age;
     public String Sex;
 
-    public Guest(int guestimage, String name, int age, String sex) {
-        GuestImage =guestimage;
+    public Guest(int guestImage, String name, int age, String sex) {
+        GuestImage = guestImage;
         Name = name;
         Age = age;
-        Sex =sex;
+        Sex = sex;
     }
 
 }
